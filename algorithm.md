@@ -1,5 +1,5 @@
 ## GCD
-```
+```python
 def gcd(a, b):
     if a == 0 or b == 0:
         return max(a, b)
@@ -9,7 +9,7 @@ def gcd(a, b):
 ```
 
 ## LCM
-```
+```python
 def lcm(a, b):
     gcdVal = gcd(a, b)
     if gcdVal == 0:
@@ -18,7 +18,7 @@ def lcm(a, b):
 ```
 
 ## DFS
-```
+```python
 def dfs(node, visited):
     if not node or visited[node]:
         return False
@@ -29,7 +29,7 @@ def dfs(node, visited):
 ```
 
 ## BFS
-```
+```python
 import Queue
 
 def bfs(root):
@@ -47,7 +47,7 @@ def bfs(root):
 ```
 
 ## Union Find
-```
+```python
 sLen = len(s)
 conn = [i for i in range(sLen)]
       
@@ -66,7 +66,7 @@ for i in range(sLen):
 ```
 
 ## Cycle Detection
-```
+```python
 def detectCycle:
     # dfs
     def isCyclic(graph, v, visited, recStack):
@@ -111,7 +111,7 @@ def topologicalSort(n, graph):
 
 ## Binary Search
 ### Bisect Left
-```
+```python
 def bisect_left(arr, value, begin, end):
     if begin >= end:
         return begin
@@ -122,7 +122,7 @@ def bisect_left(arr, value, begin, end):
         return bisect_left(arr, value, begin, mid)
 ```
 ### Bisect Right
-```
+```python
 def bisect_right(arr, value, begin, end):
     if begin >= end:
         return begin
@@ -134,7 +134,7 @@ def bisect_right(arr, value, begin, end):
 ```
 
 ## QuickSort
-```
+```python
 def quicksort(x):
    if len(x) <= 1:
        return x
@@ -153,7 +153,7 @@ def quicksort(x):
 ```
 
 ## MergeSort
-```
+```python
 def mergesort(arr):
     arr_len = len(arr)
     if arr_len <= 1:
@@ -179,7 +179,7 @@ def mergesort(arr):
 ### Dijkstra
 O(E logV + V)
 From one node to another nodes. No negative edge.
-```
+```python
 from queue import PriorityQueue
 
 def Dijkstra(g, startNode):
@@ -208,7 +208,7 @@ def Dijkstra(g, startNode):
 ### Bellman Ford
 O(V * E) 
 From one node to another nodes. Allows negative edge.
-```
+```python
 def initialize(graph, source):
     d = {} # Stands for destination
     p = {} # Stands for predecessor
@@ -239,7 +239,7 @@ def bellman_ford(graph, source):
 ### Floyd Warshall
 O(V^3)
 From every node to every node
-```
+```python
 #       graph[][] = { {0,   1,  INF, 10},
 #                    {INF,  0,  2,  INF},
 #                    {INF, INF, 0,   1},

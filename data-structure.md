@@ -1,5 +1,5 @@
 ## Set
-```
+```python
 a = set()
 a.add(2)             # a: {2}
 a.add(3)             # a: {2, 3}
@@ -10,7 +10,7 @@ a.pop()              # output: 3. a: {}
 ```
 
 ## Dict
-```
+```python
 a = {}
 a['foo'] = 'bar'                      # a: {"foo": "bar"}
 del a['foo']                          # a: {}
@@ -19,7 +19,7 @@ a['arr1'].append(2)                   # a: {'arr1': [1, 2]}
 ```
 
 ## List (also Stack)
-```
+```python
 a = []
 a.append(1)           # a: [1]
 a += [2, 3]           # a: [1, 2, 3]
@@ -33,7 +33,7 @@ a.index(2)            # output: 0
 ```
 
 ## Queue
-```
+```python
 from queue import Queue
 
 q = Queue()
@@ -44,7 +44,7 @@ q.qsize()             # output: 0
 ```
 
 ## Deque
-```
+```python
 from collections import deque
 
 dq = deque()
@@ -59,7 +59,7 @@ len(dq)                 # output: 2
 ```
 
 ## PriorityQueue
-```
+```python
 from queue import PriorityQueue
 
 q = PriorityQueue(maxsize = n)
@@ -69,7 +69,7 @@ q.empty()                            # output: True
 ```
 
 ## Heap
-```
+```python
 import heapq
 
 nums = [1,2,3,4,5]
@@ -87,7 +87,7 @@ sortKeyOut1, outputItem1 = heapq.heappop(items)
 ```
 
 ## DoublyLinkedList
-```
+```python
 class Node:
     def __init__(self, val):
         self.val = val
@@ -117,7 +117,7 @@ class LinkedList:
 ```
 
 ## Binary Search Tree
-```
+```python
 # helper function
 def printTree(node, level=0):
     if node != None:
@@ -180,7 +180,7 @@ print(bst.search(7))        # output: False
 ```
 
 ## Trie
-```
+```python
 class Trie:
     def __init__(self):
         self.head = Node(None)

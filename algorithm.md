@@ -177,7 +177,7 @@ def mergesort(arr):
 
 ## Shortest Path
 ### Dijkstra
-O(E logV + V)
+O(E logV + V)  
 From one node to another nodes. No negative edge.
 ```python
 from queue import PriorityQueue
@@ -206,7 +206,7 @@ def Dijkstra(g, startNode):
     return dist, prev
 ```
 ### Bellman Ford
-O(V * E) 
+O(V * E)  
 From one node to another nodes. Allows negative edge.
 ```python
 def initialize(graph, source):
@@ -237,7 +237,7 @@ def bellman_ford(graph, source):
 ```
 
 ### Floyd Warshall
-O(V^3)
+O(V^3)  
 From every node to every node
 ```python
 #       graph[][] = { {0,   1,  INF, 10},

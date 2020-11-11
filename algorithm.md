@@ -90,7 +90,7 @@ def detectCycle:
 ```
 
 ## Topological Sort
-```
+```python
 def sort(v, visited, graph, stk):
     visited[v] = True
     for i in graph[v]:
